@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #eaeaea;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.topo {
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.subtitulo {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background-color: #1a1a1a;
+    padding: 12px;
+}
+
+.menu a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ff3b3b;
+}
+
+.banner {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.banner h2 {
+    font-size: 22px;
+    color: #ff3b3b;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px;
+
+    max-width: 700px;
+    margin: 20px auto;
+
+    background-color: #161616;
+    border-radius: 15px;
+
+    flex-wrap: wrap;
+
+    flex: 1;
+}
+
+.card {
+    background-color: #181818;
+    padding: 20px;
+    width: 180px;
+    border-radius: 10px;
+    text-align: center;
+
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(255, 59, 59, 0.15);
+}
+
+.destaque {
+    border: 1px solid #ff3b3b;
+}
+
+.rodape {
+    text-align: center;
+    padding: 18px;
+    background-color: #141414;
+    color: #aaa;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}  
